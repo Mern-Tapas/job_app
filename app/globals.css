@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.main-container {
+    position: relative;
+}
+
+/* .main-container::before {
+    content: "";
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background: blue;
+} */
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
