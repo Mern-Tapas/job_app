@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('../public/posts.css');
 
 
 
@@ -16,7 +17,7 @@
     background: blue;
 } */
 
-img{
+img {
     height: 100%;
     width: 100%;
     object-fit: cover;

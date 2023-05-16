@@ -3,6 +3,7 @@ import Header from '@/components/Header'
 import React from 'react'
 import Links from '@/components/Links'
 import Drawer from '@/components/Drawer'
+import Posts from '@/components/Posts'
 
 function page() {
   return (
@@ -15,13 +16,15 @@ function page() {
       <div className='min-h-screen'>
 
         <Links />
-        <Drawer />
+
+        <Posts />
 
       </div>
 
       <div className="foter mt-auto">
         <Footer />
       </div>
+
 
     </>
   )
