@@ -10,7 +10,12 @@ function Header() {
                 <div className="max-w-screen-lg mx-auto flex items-center justify-between">
                     <div className='flex items-center'>
                         <div className="logo rounded-full overflow-hidden max-h-[30px] max-w-[30px]">
-                            <Image src={''} />
+                            <Image
+                                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg"
+                                alt="Description of the image"
+                                width={30}
+                                height={30}
+                            />
                         </div>
                         <Link href='/'>
                             <div className='ms-2'>
