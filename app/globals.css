@@ -1,8 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('../public/posts.css');
 
+@import url('../public/css/dropdown.css');
 
 
 .main-container {

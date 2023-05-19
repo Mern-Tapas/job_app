@@ -22,7 +22,7 @@ async function Posts() {
                                         </div>
                                     </div> */}
                                     <div className=' my-auto'>
-                                        <h1 className='capitalize' >{post.title.slice(0, 10)}</h1>
+                                        <h1 className='capitalize text-xl' >{post.title.slice(0, 10)}</h1>
                                     </div>
                                 </div>
 
@@ -30,8 +30,12 @@ async function Posts() {
                                     <p className='text-sm text-gray-500 normal-case'>{`${post.body.slice(0, 100)}`}</p>
                                 </div>
 
+                                <div className='mt-2'>
+                                    <p className='text-xs text-gray-400 normal-case'>Last Update: 25-July-2020</p>
+                                </div>
+
                                 <div className='mt-2 flex'>
-                                    <Link href='' className='text-xs ms-auto ring-2 ring-gray-400 hover:bg-gray-950 hover:text-white hover:ring-gray-950 transition p-1 rounded-full px-3'>Read More</Link>
+                                    <Link href='/post' target='' className='text-sm ms-auto ring-2 ring-gray-950 bg-gray-950 text-white transition p-1 rounded-md px-3'>Read More</Link>
                                 </div>
 
                             </div>

@@ -22,7 +22,7 @@ function Links() {
         <div className="max-w-screen-lg mx-auto px-3">
             <div className="links mt-4 flex flex-wrap ">
                 {links.map((link) => {
-                    return <Link href='' key={link.id} className='me-2 transition mb-2 hover:bg-blue-600 hover:text-white text-xs bg-blue-50 text-blue-500 p-1.5 px-3 rounded-full capitalize'>{link.link}</Link>
+                    return <Link href='' key={link.id} className='me-2 transition mb-2 hover:bg-[#111827] hover:text-white text-xs bg-[#e5e5e5] text-gray-900 p-2.5 px-3 font-medium rounded-md capitalize'>{link.link}</Link>
                 })}
             </div>
         </div>
