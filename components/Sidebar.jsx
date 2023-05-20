@@ -15,19 +15,19 @@ function Sidebar() {
 
             <div className='p-3 flex justify-between px-5'>
                 <div className='icon text-white text-xs w-[20px] h-[20px]'>
-                    <Image src="/icons/search.svg" className='' width={15} height={15}>
+                    <Image alt='profile' src="/icons/search.svg" className='' width={15} height={15}>
                     </Image>
                 </div>
                 <div className='icon text-white text-xs w-[20px] h-[20px]'>
-                    <Image src="/icons/menu.svg" width={15} height={15}>
+                    <Image alt='profile' src="/icons/menu.svg" width={15} height={15}>
                     </Image>
                 </div>
             </div>
 
             <div className='p-3 flex flex-col relative' onClick={() => { setOpen(!isOpen) }}>
-                <hr className='border-1 border-[#54679c] absolute top-7 left-0 w-full' />
+                {/* <hr className='border-1 border-[#54679c] absolute top-7 left-0 w-full' /> */}
                 <div className={isOpen ? "profile-image z-10 w-[50px] h-[50px] overflow-hidden rounded-full border-box bg-white mx-auto" : "profile-image z-10 w-[30px] h-[30px] overflow-hidden rounded-full border-box bg-white mx-auto"}>
-                    <Image src="/profile.avif" width={50} height={50}>
+                    <Image alt='profile' src="/profile.avif" width={50} height={50}>
                     </Image>
                 </div>
             </div>
@@ -42,7 +42,7 @@ function Sidebar() {
                     <ul >
                         <Link href="admin" className=' text-white flex mb-4 p-2 rounded-md hover:bg-[#2b3550]'>
                             <div className={isOpen ? "w-[20px] h-[20px] icons" : "w-[20px] h-[20px] icons mx-auto"}>
-                                <Image src='/icons/grid.svg' width={15} height={15} ></Image>
+                                <Image alt='grid icon' src='/icons/grid.svg' width={15} height={15} ></Image>
                             </div>
                             {isOpen ?
                                 <span className='ms-2 text-sm'>Dashboard</span>
