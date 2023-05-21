@@ -10,8 +10,8 @@ function adminLayout({ children }) {
                 <Sidebar />
 
                 <div className='overflow-y-scroll flex flex-col w-full'>
-                    <Topbar/>
-                    <div className='w-full p-2 h-full flex'>
+                    <Topbar />
+                    <div className='w-full p-2 h-full flex flex-col'>
                         {children}
                     </div>
                 </div>

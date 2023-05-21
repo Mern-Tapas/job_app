@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import url('../public/css/dropdown.css');
+@import url('../public/css/dashboard.css');
 
 
 .main-container {

@@ -2,12 +2,19 @@ import React from 'react'
 
 function page() {
   return (
-    <div className='h-full w-full grid gap-2'>
-      <div>1</div>
-      <div>1</div>
-      <div>1</div>
-      <div>1</div>
-      <div>1</div>
+    <div className='max-w-screen-xl h-full min-w-screen-xl mx-auto'>
+
+      <div className="h-full grid gap-4 dashboard-grid">
+        <div className="bg-white border rounded-lg">lorem300</div>
+        <div className="bg-white border rounded-lg"></div>
+        <div className="bg-white border rounded-lg"></div>
+        <div className="bg-white border rounded-lg"></div>
+        <div className="bg-white border rounded-lg"></div>
+        <div className="bg-white border rounded-lg"></div>
+        <div className="bg-white border rounded-lg"></div>
+        <div className="bg-white border rounded-lg"></div>
+      </div>
+
     </div>
   )
 }

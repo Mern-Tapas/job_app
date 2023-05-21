@@ -9,7 +9,7 @@ function page() {
   return (
     <>
 
-      <div className="header sticky top-0 border-2">
+      <div className="header sticky top-0 border-b">
         <Header />
       </div>
 
