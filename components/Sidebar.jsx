@@ -50,6 +50,16 @@ function Sidebar() {
                                 ""}
                         </Link>
 
+                        <Link href="admin/product" className=' text-white flex mb-4 p-2 rounded-md hover:bg-[#2b3550]'>
+                            <div className={isOpen ? "w-[20px] h-[20px] icons" : "w-[20px] h-[20px] icons mx-auto"}>
+                                <Image alt='grid icon' src='/icons/grid.svg' width={15} height={15} ></Image>
+                            </div>
+                            {isOpen ?
+                                <span className='ms-2 text-sm'>Product</span>
+                                :
+                                ""}
+                        </Link>
+
                     </ul>
                 </div>
 
