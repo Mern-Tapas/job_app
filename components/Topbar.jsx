@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 function Topbar() {
     return (
-        <div className='w-full bg-white p-2 flex  justify-between sticky top-0'>
+        <div className='w-full bg-white p-2 flex  justify-between sticky top-0 border-b'>
 
             <div className=''>
 
