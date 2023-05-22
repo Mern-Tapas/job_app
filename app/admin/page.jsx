@@ -14,7 +14,10 @@ function page() {
             <div className='rounded-md p-2 bg-white border'><Count /></div>
             <div className='rounded-md p-2 bg-white border'><Count /></div>
 
-            <div className='rounded-md p-2 bg-white border sm:col-span-2 2xl:col-span-4'></div>
+            <div className='rounded-md p-2 bg-white border sm:col-span-2 2xl:col-span-4'>
+              <i className="fas fa-search"></i>
+d 
+            </div>
             <div className='rounded-md p-2 bg-white border sm:col-span-2 md:col-span-1 2xl:col-span-2 '></div>
             <div className='rounded-md p-2 bg-white border sm:col-span-2 md:col-span-1 2xl:col-span-2'></div>
             <div className='rounded-md p-2 bg-white border sm:col-span-2 2xl:col-span-4'></div>
