@@ -1,15 +1,20 @@
+'use client'
+
 import PostForm from '@/components/PostForm'
 import PostPreview from '@/components/PostPreview'
-import React from 'react'
+import React, { useState } from 'react'
 
 function page() {
+
+  const [isOpen, setOpen] = useState(false)
+
   return (
     <div className="mt-3 grid lg:grid-cols-2 gap-2">
 
-      <PostForm />
+      <PostForm tableButton={() => (setOpen(!isOpen))} />
 
       <PostPreview />
-      
+
     </div>
   )
 }
