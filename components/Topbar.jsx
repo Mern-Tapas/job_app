@@ -14,11 +14,19 @@ function Topbar() {
 
             <div className=''>
 
-                <div className='relative'>
 
-                    <div>
+                <div className='relative flex'>
+
+                    <div className='w-[35px] h-[35px] rounded-full bg-gray-100 me-3 flex'>
+                        <div className='m-auto h-[25px] w-[25px]'>
+
+                            <Image alt='profile' src="/icons/bell.svg" width={20} height={20}  >
+                            </Image>
+                        </div>
 
                     </div>
+
+
 
                     <button className='user-button'>
                         <div className='w-[35px] h-[35px] overflow-hidden rounded-full'>

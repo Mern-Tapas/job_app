@@ -29,7 +29,7 @@ function Sidebar() {
                     ""}
             </div>
 
-            <hr />
+            <hr className='border-gray-600' />
 
             {/* menu */}
 
