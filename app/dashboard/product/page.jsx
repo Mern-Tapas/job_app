@@ -4,7 +4,7 @@ import PostForm from '@/components/PostForm'
 import PostPreview from '@/components/PostPreview'
 import React, { useState } from 'react'
 
-function page() {
+function Page() {
 
   const [isOpen, setOpen] = useState(false)
 
