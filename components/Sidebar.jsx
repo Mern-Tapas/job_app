@@ -14,7 +14,7 @@ function Sidebar() {
         <div className={isOpen ? "h-full min-w-[200px] bg-[#171c2a] flex-col lg:flex hidden" : "h-full min-w-[50px] bg-[#171c2a] flex-col lg:flex hidden"}>
 
 
-            <div className='p-2 flex relative' onClick={() => { setOpen(!isOpen) }}>
+            <div className='p-2 pb-1 flex relative' onClick={() => { setOpen(!isOpen) }}>
                 {/* <hr className='border-1 border-[#54679c] absolute top-7 left-0 w-full' /> */}
                 <div className={isOpen ? "profile-image z-10 w-[40px] h-[40px] overflow-hidden rounded-full border-box bg-white" : "mx-auto profile-image z-10 w-[40px] h-[40px] overflow-hidden rounded-full border-box bg-white"}>
                     <Image alt='profile' src="/profile.avif" width={50} height={50}>
@@ -48,22 +48,22 @@ function Sidebar() {
                                 ""}
                         </Link>
 
-                        <Link href="dashboard/product" className=' text-white flex mb-2 p-2 rounded-md hover:bg-[#2b3550]'>
+                        <Link href="dashboard/post" className=' text-white flex mb-2 p-2 rounded-md hover:bg-[#2b3550]'>
                             <div className={isOpen ? "w-[20px] h-[20px] icons" : "w-[20px] h-[20px] icons mx-auto"}>
-                                <Image alt='grid icon' src='/icons/product.svg' width={15} height={15} ></Image>
+                                <Image alt='grid icon' src='/icons/blog.svg' width={15} height={15} ></Image>
                             </div>
                             {isOpen ?
-                                <span className='ms-2 text-sm'>Product</span>
+                                <span className='ms-2 text-sm'>post</span>
                                 :
                                 ""}
                         </Link>
 
                         <Link href="dashboard/product" className=' text-white flex mb-2 p-2 rounded-md hover:bg-[#2b3550]'>
                             <div className={isOpen ? "w-[20px] h-[20px] icons" : "w-[20px] h-[20px] icons mx-auto"}>
-                                <Image alt='grid icon' src='/icons/blog.svg' width={15} height={15} ></Image>
+                                <Image alt='grid icon' src='/icons/product.svg' width={15} height={15} ></Image>
                             </div>
                             {isOpen ?
-                                <span className='ms-2 text-sm'>Post</span>
+                                <span className='ms-2 text-sm'>Product</span>
                                 :
                                 ""}
                         </Link>
