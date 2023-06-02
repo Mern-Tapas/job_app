@@ -5,7 +5,7 @@ import Topbar from '@/components/Topbar'
 function adminLayout({ children }) {
     return (
         <>
-            <div className='h-screen bg-gray-50 flex overflow-hidden'>
+            <div className='h-screen bg-[#f9fafb] flex overflow-hidden'>
 
                 <Sidebar />
 

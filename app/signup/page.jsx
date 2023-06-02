@@ -2,6 +2,8 @@ import React from 'react'
 import Logo from '@/components/Logo'
 import Link from 'next/link'
 
+
+
 function page() {
     return (
         <div className='min-h-screen'>

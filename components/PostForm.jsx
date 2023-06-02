@@ -5,7 +5,7 @@ function PostForm() {
         <div className="p-4 bg-white border rounded-lg">
 
             <div className="flex">
-                <h2 className="p-2 bg-green-100 ring-green-500 text-green-500 ring-1 rounded-md text-xs">Create Post</h2>
+                <h2 className="p-2 bg-green-100 ring-green-500 text-green-500 ring-1 rounded-md text-xs font-medium">Create Post</h2>
             </div>
             {/* form start */}
             <div className='form' >

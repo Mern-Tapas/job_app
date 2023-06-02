@@ -11,13 +11,13 @@ function Sidebar() {
 
 
     return (
-        <div className={isOpen ? "h-full min-w-[200px] bg-[#171c2a] flex-col lg:flex hidden" : "h-full min-w-[50px] bg-[#171c2a] flex-col lg:flex hidden"}>
+        <div className={isOpen ? "h-full min-w-[200px] bg-[#171c2a] flex-col lg:flex hidden" : "h-full min-w-[55px] bg-[#171c2a] flex-col lg:flex hidden"}>
 
 
-            <div className='p-2 pb-1 flex relative' onClick={() => { setOpen(!isOpen) }}>
+            <div className='p-2 pb-1 flex relative p-4' onClick={() => { setOpen(!isOpen) }}>
                 {/* <hr className='border-1 border-[#54679c] absolute top-7 left-0 w-full' /> */}
                 <div className={isOpen ? "profile-image z-10 w-[40px] h-[40px] overflow-hidden rounded-full border-box bg-white" : "mx-auto profile-image z-10 w-[40px] h-[40px] overflow-hidden rounded-full border-box bg-white"}>
-                    <Image alt='profile' src="/profile.avif" width={50} height={50}>
+                    <Image alt='profile' src="/profile.avif" width={35} height={35}>
                     </Image>
                 </div>
                 {isOpen ?
@@ -29,7 +29,7 @@ function Sidebar() {
                     ""}
             </div>
 
-            <hr className='border-gray-600' />
+            {/* <hr className='border-gray-600' /> */}
 
             {/* menu */}
 
