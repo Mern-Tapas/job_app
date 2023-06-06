@@ -54,7 +54,7 @@ function PostForm() {
                 </div>
 
                 <div className="mt-3">
-                    <button className='w-100 block bg-blue-600 text-white w-full p-2 hover:bg-blue-800 rounded-md'>Add Date</button>
+                    <button className='w-100 block bg-blue-600 text-white ms-auto px-4 p-2 hover:bg-blue-800 rounded-md'>Add Date</button>
                 </div>
                 {/* add extra dates */}
 
@@ -74,12 +74,12 @@ function PostForm() {
                 </div>
 
                 <div className="mt-3">
-                    <button className='w-100 block bg-blue-600 text-white w-full p-2 hover:bg-blue-800 rounded-md'>Add Links</button>
+                    <button className='w-100 block bg-blue-600 text-white ms-auto px-4 p-2 hover:bg-blue-800 rounded-md'>Add Links</button>
                 </div>
                 {/* add extra dates */}
 
                 <div className="mt-3 flex">
-                    <button className='ms-auto p-2 bg-blue-50 text-blue-600 rounded-md ring-1 ring-blue-600 hover:bg-blue-600 hover:text-white'>Add Table</button>
+                    <button className='ms-auto px-4 p-2 bg-blue-50 text-blue-600 rounded-md ring-1 ring-blue-600 hover:bg-blue-600 hover:text-white'>Create Table</button>
                 </div>
 
 
