@@ -1,4 +1,4 @@
-export default function ({ children }) {
+export default function AdminLoginLayout({ children }) {
     return (
         <>
             {children}
