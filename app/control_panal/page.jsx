@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import Logo from '@/components/Logo'
 
-function page() {
+function Page() {
 
     const [credentials, setCredentials] = useState({
         email: "",
@@ -66,4 +66,4 @@ function page() {
     )
 }
 
-export default page
+export default Page
