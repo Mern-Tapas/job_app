@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import Logo from '@/components/Logo'
 
 function Page() {
@@ -17,10 +18,10 @@ function Page() {
         })
     }
 
-    
-    const login = (e)=>{
+
+    const login = (e) => {
         e.preventDefault()
-        
+
     }
 
     return (
@@ -30,9 +31,37 @@ function Page() {
                 <Logo />
                 <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
                     <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
-                        <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+                        <h1 className="text-xl text-center font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
                             Sign in to your account
                         </h1>
+
+                        <div className='flex justify-center'>
+
+                            <button className='me-2 border p-2 rounded-md flex'>
+                                <div className='w-[20px] h-[20px]'>
+                                    <Image
+                                        src="/icons/google.svg"
+                                        alt="Description of the image"
+                                        width={10}
+                                        height={10}
+                                    />
+                                </div>
+                                <span className='ms-2 p-0 m-0'>Google</span>
+                            </button>
+                            <button className='me-2 border p-2 rounded-md flex'>
+                                <div className='w-[20px] h-[20px]'>
+                                    <Image
+                                        src="/icons/facebook.svg"
+                                        alt="Description of the image"
+                                        width={10}
+                                        height={10}
+                                    />
+                                </div>
+                                <span className='ms-2 p-0 m-0'>Facebook</span>
+                            </button>
+
+                        </div>
+
                         <form className="space-y-4 md:space-y-6" onSubmit={login}>
                             <div>
                                 <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
