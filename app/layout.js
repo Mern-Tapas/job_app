@@ -1,7 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
-import image from '../public/logo.jpg'
+import Provider from '@/components/Provider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,9 +19,11 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body className={inter.className}>
-        <div className='min-h-screen main-container bg-gray-50 flex flex-col'>
-          {children}
-        </div>
+        <Provider>
+          <div className='min-h-screen main-container bg-gray-50 flex flex-col'>
+            {children}
+          </div>
+        </Provider>
       </body>
     </html >
   )

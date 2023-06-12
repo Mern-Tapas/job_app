@@ -1,4 +1,12 @@
-export { default } from "next-auth/middleware"
+import { NextResponse } from "next/server"
+export function middleware(request) {
+  const nextUrl = request.url
 
+  if (request.nextUrl.pathname.startsWith('/dashboard')) {
+    return NextResponse.redirect(new URL('/login', request.url))
+  }
 
-export const config = { matcher: ["/dashboard"] }   
+  if (request.nextUrl.pathname.startsWith('/dashboard')) {
+    return NextResponse.redirect(new URL('/dashboard/user', request.url))
+  }
+}

@@ -3,9 +3,11 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import Logo from '@/components/Logo'
-
+import axios from 'axios'
+import { useRouter } from 'next/navigation'
 function Page() {
 
+    const router = useRouter()
     const [credentials, setCredentials] = useState({
         email: "",
         password: ""
@@ -19,8 +21,15 @@ function Page() {
     }
 
 
-    const login = (e) => {
+    const login = async (e) => {
         e.preventDefault()
+        await axios.post("/api/control_panal", credentials).then((response) => {
+            console.log(response)
+            router.push('login')
+
+        }).catch((error) => {
+            console.log(error)
+        })
 
     }
 
